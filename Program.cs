@@ -63,7 +63,8 @@
                             };
                         await Bot.SendTextMessageAsync(
                                 message.Chat.Id,
-                                "Выберите вопрос");
+                                "Выберите вопрос",
+                                replyMarkup: ReplyKeyboard); 
 
                        
                     }
@@ -80,7 +81,9 @@
                             };
                         await Bot.SendTextMessageAsync(
                                 message.Chat.Id,
-                                "Выберите вопрос");
+                                "Выберите вопрос",
+                                 replyMarkup: ReplyKeyboard
+                                );
                         
                     }
                     else if (ev.CallbackQuery.Data == "Бакалавриат")
@@ -93,7 +96,11 @@
                                 new[] { "Где находится ИМС",
                                     "Когда поступить стипедния" },
                         };
-                        
+                        await Bot.SendTextMessageAsync(
+                              message.Chat.Id,
+                              "Выберите вопрос"
+                               replyMarkup: ReplyKeyboard);
+
                     }
                     
                 };
