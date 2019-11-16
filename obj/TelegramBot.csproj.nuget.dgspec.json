@@ -41,6 +41,10 @@
       "frameworks": {
         "netcoreapp3.0": {
           "dependencies": {
+            "ApiAiSDK": {
+              "target": "Package",
+              "version": "[1.6.5, )"
+            },
             "Telegram.Bot": {
               "target": "Package",
               "version": "[15.0.0, )"

@@ -44,7 +44,11 @@ namespace Telegram.Bot.Examples.Echo
                             {
                                 InlineKeyboardButton.WithCallbackData("Абитуриент","Абитуриент"),
                                 InlineKeyboardButton.WithCallbackData("Бакалавриат","Бакалавриат"),
-                                InlineKeyboardButton.WithCallbackData("Преподаватель","Преподаватель")
+                            },
+                            new []
+                            {
+                                InlineKeyboardButton.WithCallbackData("Преподаватель","Преподаватель"),
+                                InlineKeyboardButton.WithCallbackData("Местоположение корпусов SU","МК")
                             }
                       });
 
@@ -90,6 +94,7 @@ namespace Telegram.Bot.Examples.Echo
                             var message = ev.CallbackQuery.Message;
                             switch (ev.CallbackQuery.Data)
                             {
+
                                 case "first":
                                     await Bot.SendTextMessageAsync(message.Chat.Id, "Зарегистрироваться в онлайн режиме по адресу kb.satbayev.university");
                                     break;
@@ -112,8 +117,6 @@ namespace Telegram.Bot.Examples.Echo
                         };
 
                     }
-
-
 
                     else
                     if (ev.CallbackQuery.Data == "Бакалавриат")
@@ -194,7 +197,7 @@ namespace Telegram.Bot.Examples.Echo
                             {
                                 InlineKeyboardButton.WithCallbackData("","forth"),
                                 },
-new []
+                            new []
                             {
                                 InlineKeyboardButton.WithCallbackData("","fifth"),
                                 },
@@ -204,6 +207,69 @@ new []
                                 }
                       });
 
+                    }
+                    else
+                    if (ev.CallbackQuery.Data == "МК")
+                    {
+                        var keyborad = new InlineKeyboardMarkup(new[]
+                       {
+                            new []
+                            {
+                                InlineKeyboardButton.WithCallbackData("Главный учебный корпус","first")
+                            },
+                            new []
+                            {
+                                InlineKeyboardButton.WithCallbackData("Горно-металлургический институт имени О. Байконурова","second")
+                            },
+                            new []
+                            {
+                                InlineKeyboardButton.WithCallbackData("Медицинский пункт","third")
+                            },
+                            new []
+                            {
+                                InlineKeyboardButton.WithCallbackData("Нефтянной корпус","four")
+                            },
+                            new []
+                            {
+                                InlineKeyboardButton.WithCallbackData("Военная кафедра","five")
+                            }
+
+                      });
+
+                        await Bot.SendTextMessageAsync(message.Chat.Id, ev.CallbackQuery.Message.Text, replyMarkup: keyborad);
+                        Bot.OnCallbackQuery += async (object sc, CallbackQueryEventArgs ev) =>
+                        {
+                            var message = ev.CallbackQuery.Message;
+                            switch (ev.CallbackQuery.Data)
+                            {
+                                case "first":
+                                    float Latitude1 = 43.236422f;
+                                    float Longitude1 = 76.929755f;
+                                    await Bot.SendLocationAsync(message.Chat.Id, Latitude1, Longitude1);
+                                    break;
+                                case "second":
+                                    float Latitude2 = 43.236520f;
+                                    float Longitude2 = 76.931572f;
+                                    await Bot.SendLocationAsync(message.Chat.Id, Latitude2, Longitude2);
+                                    break;
+                                case "third":
+                                    float Latitude3= 43.237319f;
+                                    float Longitude3 = 76.934405f;
+                                    await Bot.SendLocationAsync(message.Chat.Id, Latitude3, Longitude3);
+                                    break;
+                                case "four":
+                                    float Latitude4 = 43.237093f;
+                                    float Longitude4 = 76.931374f;
+                                    await Bot.SendLocationAsync(message.Chat.Id, Latitude4, Longitude4);
+                                    break;
+                                case "five":
+                                    float Latitude5 = 43.231572f;
+                                    float Longitude5 = 76.934406f;
+                                    await Bot.SendLocationAsync(message.Chat.Id, Latitude5, Longitude5);
+                                    break;
+                               
+                            }
+                        };
                     }
 
                 };

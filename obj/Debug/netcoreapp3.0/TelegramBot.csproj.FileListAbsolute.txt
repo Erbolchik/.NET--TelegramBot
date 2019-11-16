@@ -12,3 +12,4 @@ C:\Users\Erbolchik\source\repos\TelegramBot\bin\Debug\netcoreapp3.0\Telegram.Bot
 C:\Users\Erbolchik\source\repos\TelegramBot\obj\Debug\netcoreapp3.0\TelegramBot.csproj.CopyComplete
 C:\Users\Erbolchik\source\repos\TelegramBot\obj\Debug\netcoreapp3.0\TelegramBot.dll
 C:\Users\Erbolchik\source\repos\TelegramBot\obj\Debug\netcoreapp3.0\TelegramBot.pdb
+C:\Users\Erbolchik\source\repos\TelegramBot\bin\Debug\netcoreapp3.0\ApiAiSDK.dll
