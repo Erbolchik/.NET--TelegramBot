@@ -98,7 +98,7 @@
                         };
                         await Bot.SendTextMessageAsync(
                               message.Chat.Id,
-                              "Выберите вопрос"
+                              "Выберите вопрос",
                                replyMarkup: ReplyKeyboard);
 
                     }
