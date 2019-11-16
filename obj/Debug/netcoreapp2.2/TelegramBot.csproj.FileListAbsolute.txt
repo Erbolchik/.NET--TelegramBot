@@ -1,0 +1,10 @@
+C:\Users\Erbolchik\source\repos\TelegramBot\bin\Debug\netcoreapp2.2\TelegramBot.deps.json
+C:\Users\Erbolchik\source\repos\TelegramBot\bin\Debug\netcoreapp2.2\TelegramBot.runtimeconfig.json
+C:\Users\Erbolchik\source\repos\TelegramBot\bin\Debug\netcoreapp2.2\TelegramBot.runtimeconfig.dev.json
+C:\Users\Erbolchik\source\repos\TelegramBot\bin\Debug\netcoreapp2.2\TelegramBot.dll
+C:\Users\Erbolchik\source\repos\TelegramBot\bin\Debug\netcoreapp2.2\TelegramBot.pdb
+C:\Users\Erbolchik\source\repos\TelegramBot\obj\Debug\netcoreapp2.2\TelegramBot.csprojAssemblyReference.cache
+C:\Users\Erbolchik\source\repos\TelegramBot\obj\Debug\netcoreapp2.2\TelegramBot.AssemblyInfoInputs.cache
+C:\Users\Erbolchik\source\repos\TelegramBot\obj\Debug\netcoreapp2.2\TelegramBot.AssemblyInfo.cs
+C:\Users\Erbolchik\source\repos\TelegramBot\obj\Debug\netcoreapp2.2\TelegramBot.dll
+C:\Users\Erbolchik\source\repos\TelegramBot\obj\Debug\netcoreapp2.2\TelegramBot.pdb

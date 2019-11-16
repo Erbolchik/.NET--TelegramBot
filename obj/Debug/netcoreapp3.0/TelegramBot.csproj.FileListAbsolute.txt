@@ -1,0 +1,14 @@
+C:\Users\Erbolchik\source\repos\TelegramBot\bin\Debug\netcoreapp3.0\TelegramBot.exe
+C:\Users\Erbolchik\source\repos\TelegramBot\obj\Debug\netcoreapp3.0\TelegramBot.csprojAssemblyReference.cache
+C:\Users\Erbolchik\source\repos\TelegramBot\obj\Debug\netcoreapp3.0\TelegramBot.AssemblyInfoInputs.cache
+C:\Users\Erbolchik\source\repos\TelegramBot\obj\Debug\netcoreapp3.0\TelegramBot.AssemblyInfo.cs
+C:\Users\Erbolchik\source\repos\TelegramBot\bin\Debug\netcoreapp3.0\TelegramBot.deps.json
+C:\Users\Erbolchik\source\repos\TelegramBot\bin\Debug\netcoreapp3.0\TelegramBot.runtimeconfig.json
+C:\Users\Erbolchik\source\repos\TelegramBot\bin\Debug\netcoreapp3.0\TelegramBot.runtimeconfig.dev.json
+C:\Users\Erbolchik\source\repos\TelegramBot\bin\Debug\netcoreapp3.0\TelegramBot.dll
+C:\Users\Erbolchik\source\repos\TelegramBot\bin\Debug\netcoreapp3.0\TelegramBot.pdb
+C:\Users\Erbolchik\source\repos\TelegramBot\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
+C:\Users\Erbolchik\source\repos\TelegramBot\bin\Debug\netcoreapp3.0\Telegram.Bot.dll
+C:\Users\Erbolchik\source\repos\TelegramBot\obj\Debug\netcoreapp3.0\TelegramBot.csproj.CopyComplete
+C:\Users\Erbolchik\source\repos\TelegramBot\obj\Debug\netcoreapp3.0\TelegramBot.dll
+C:\Users\Erbolchik\source\repos\TelegramBot\obj\Debug\netcoreapp3.0\TelegramBot.pdb
