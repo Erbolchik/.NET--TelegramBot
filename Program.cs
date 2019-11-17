@@ -1,17 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿using ApiAiSDK;
+using System;
+using System.IO;
 using Telegram.Bot;
 using Telegram.Bot.Args;
-using Telegram.Bot.Types;
 using Telegram.Bot.Types.Enums;
 using Telegram.Bot.Types.ReplyMarkups;
-using Telegram.Bot.Types.InlineQueryResults;
-using ApiAiSDK;
-using ApiAiSDK.Model;
 
 namespace TelegramBot
 {
@@ -167,11 +160,11 @@ namespace TelegramBot
                  {
                             new []
                             {
-                                InlineKeyboardButton.WithCallbackData("","first"),
+                                InlineKeyboardButton.WithUrl("Академический календарь","https://drive.google.com/uc?export=download&id=10Z7T0DhO08kwQLA76YI1aYqkP8ZVxBSK"),
                             },
                             new []
                             {
-                                InlineKeyboardButton.WithCallbackData("","second"),
+                                InlineKeyboardButton.WithUrl("Скачать форму отчета","https://drive.google.com/uc?export=download&id=1nEEsECD2od_zsFZlgLMWKUnB3f3VOK0T"),
                                 },
                             new []
                             {
@@ -190,6 +183,7 @@ namespace TelegramBot
                             InlineKeyboardButton.WithCallbackData("","sixth"),
                                 }
                       });
+                    await Bot.SendTextMessageAsync(message.Chat.Id, e.CallbackQuery.Message.Text, replyMarkup: keyboard_third);
                     break;
 
                 case "МК":
@@ -219,6 +213,7 @@ namespace TelegramBot
                       });
 
                 await Bot.SendTextMessageAsync(message.Chat.Id, e.CallbackQuery.Message.Text, replyMarkup: keyboard_fourth);
+                    
                 Bot.OnCallbackQuery += async (object sc, CallbackQueryEventArgs ev) =>
                 {
                     var message = e.CallbackQuery.Message;
